@@ -2,7 +2,7 @@
 
 
  ## Tips
- 1. Make sure to pass a function in setState if you are using the current state to modify next State to access the latest state value.
+ 1. Make sure to pass a function in setState if you are using the current state to modify next State to access the latest state value and also always use const to desructure useState hook.
  
       ```
       const [count,setCount] = useState(0);
