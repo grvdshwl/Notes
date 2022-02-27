@@ -19,4 +19,10 @@
       
   2. Try  useMemo or useCallback hook with dependencies of useEffect hook if the dependencies(especially objects) are recreated on every rerender ,causing entire component to render again and again.
 
-  3.   
+  3.   use arrow function over normal function declaration.
+  
+  4.   distrubute react app into components.
+  
+  5.   Try to seperate logic and prestentational layer of a compoenent using custom hooks or presentation-container component paradigm.
+  
+  6.    
