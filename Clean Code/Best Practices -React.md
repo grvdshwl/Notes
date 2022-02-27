@@ -16,3 +16,7 @@
       }
       
       ```
+      
+  2. Try  useMemo or useCallback hook with dependencies of useEffect hook if the dependencies(especially objects) are recreated on every rerender ,causing entire component to render again and again.
+
+  3.   
