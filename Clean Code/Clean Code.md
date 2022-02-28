@@ -26,11 +26,19 @@ Clean code is the code which is easy to read,understand & should be concise.
        
   ### Naming Variables,Constants and Properties (Data containers) :-
       
-      Object/Array/Map -> use a  name which is specific and concise and describe the value -> e.g. authenticatedUser, userData etc
+      Object/Array/Map -> use a  name which is specific and concise and describe the value -> e.g. authenticatedUser, customer,seller,user etc
       
       String/Number ->  use a  name which is specific and concise and describe the value -> e.g. firstName, age etc
       
       Boolean -> ask question a true/false question -> e.g. isValid,isUserAutheticated.
+      
+  ### Naming Function & Methods :- 
+  
+        Performs Operations ->describe the operation or what function is doing e.g. -> getUserById, saveUser,checkIsValid ,response.send() etc
+        
+        Return Boolean -> ask question a true/false question -> e.g. nameIsValid, Purchase.isPaid() etc.
+        
+        
       
       
        
