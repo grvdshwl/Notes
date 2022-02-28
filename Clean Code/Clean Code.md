@@ -54,7 +54,37 @@ Clean code is the code which is easy to read,understand & should be concise.
    3. Use distinctive name. Don't use similar name for slightly different things as it will help avoid confusion.
    4. Be constistent e.g. --> If you choose getUsers() ,sticks with it in entire program , don't use fetchUsers() or retrieveUsers().
    
-   6.  
+## Comments & Code Formatting
+
+Generally one should avoid comment excepts few acceptions.
+
+   ### Bad Comments
+   1. Redundant Comments 
+   2. Misleading Comments
+   3. Divider / Block Marker
+   4. Commented-Out Code
+   
+   ### Good Comments
+   1. Legal Information
+   2. Explanations which can't be replaced by Good Naming. e.g. -> commenting a RegEx.
+   3. Warning e.g. //! Only work in development environment.
+   4. Todo : Note 
+
+   ## Vertical Formatting
+   1. If file has too many lines of code try spiltting the code  with multiple concepts in multiple files. e.g. --> One class per file
+   2. Different concepts/methods should be spaced vertically.
+   3. Similar concepts/methods should not be spaced vertically.
+   4. Related concepts/methods should be placed close to each other.
+   
+   ## Horizontal Formatting
+   1. Instead of one single line of code which has long arguments, assign the argument to a variable/constant and then use that constant name as argument to make code readable.
+   2.  Don't use very long name to describe a variable,constant or function.
+   
+    
+
+   
+
+
          
    
    
