@@ -9,7 +9,18 @@ Clean code is the code which is easy to read,understand & should be concise.
    
    ### Name Casing :-
        
-       camel_case -> ``` is_valid ; send_response``` -> python (variables,functions)
+       snake_case -> e.g. : is_valid  -> python (variables,functions)
+       
+       camelCase -> e.g. isValid -> java, javascript (varaibles,functions)
+       
+       PascalCase -> e.g. IsValid -> class or functional component in javascript
+       
+       kebab-case -> e.g. is-valid -> html, css
+       
+       
+       
+       
+       
        
 
 
