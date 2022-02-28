@@ -30,6 +30,7 @@ Clean code is the code which is easy to read,understand & should be concise.
       
       String/Number ->  use a  name which is specific and concise and describe the value -> e.g. firstName, age etc
       
+      
       Boolean -> ask question a true/false question -> e.g. isValid,isUserAutheticated.
       
   ### Naming Function & Methods :- 
@@ -39,7 +40,31 @@ Clean code is the code which is easy to read,understand & should be concise.
         Return Boolean -> ask question a true/false question -> e.g. nameIsValid, Purchase.isPaid() etc.
         
         
-      
+  ### Classes 
+  
+         Describe the object  which is being instatiated with a clear name e.g. ---> User,Admin etc
+         
+         for getter and setter its ok to describe as data container and not as a function.
+         
+   
+   Tips
+   
+   1. Don't include redundant information in name e.g. ---> userWithNameAndAge('gaurav',31) 
+   2. Avoid slang,abbreviation & Disinformation e.g. --> product.diePlease(), user.heyHomies()
+   3. Use distinctive name. Don't use similar name for slightly different things as it will help avoid confusion.
+   4. Be constistent e.g. --> If you choose getUsers() ,sticks with it in entire program , don't use fetchUsers() or retrieveUsers().
+   
+   6.  
+         
+   
+   
+         
+         
+         
+         
+         
+         
+         
       
        
 
