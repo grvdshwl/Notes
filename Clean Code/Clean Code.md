@@ -115,42 +115,42 @@ Generally one should avoid comment excepts few acceptions.
    
    #### Concept - Examples
    
-   ` function saveUser(email, password) {
-  const user = {
-    id: Math.random().toString(),
-    email: email,
-    password: password,
-  };
+            ` function saveUser(email, password) {
+              const user = {
+               id: Math.random().toString(),
+               email: email,
+               password: password,
+                };
 
-  db.insert('users', user);
-}
+                db.insert('users', user);
+                  }
 
-saveUser('test@test.com', 'testers');
+               saveUser('test@test.com', 'testers');
 
-function saveUser(user) {
-  db.insert('users', user);
-}
+               function saveUser(user) {
+                  db.insert('users', user);
+                  }
 
-saveUser(newUser);
+                  saveUser(newUser);
 
 
 
-class User {
-  constructor(email, password) {
-    this.email = email;
-    this.password = password;
-    this.id = Math.random().toString();
-  }
+               class User {
+               constructor(email, password) {
+              this.email = email;
+              this.password = password;
+              this.id = Math.random().toString();
+               }
 
-  save() {
-    db.insert('users', this);
-  }
-}
+               save() {
+              db.insert('users', this);
+               }
+               }
 
-const user = new User('test@test.com', 'testers');
-user.save();
+               const user = new User('test@test.com', 'testers');
+               user.save();
 
-`
+```
          
          
    
