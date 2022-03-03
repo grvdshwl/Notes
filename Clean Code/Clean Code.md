@@ -285,6 +285,33 @@ Generally one should avoid comment excepts few acceptions.
 
                         log('Hi there!');
 
+   
+   ## Function Body
+   
+         1. Function should be small and do one thing i.e Code Spiltting for functions.
+         
+         2. Function should do work that is one level of abstraction below their name.
+         
+         3. Try Not to Mix levels of abractions in a function.
+         
+         4. Extract the code that works on same functionility 
+            
+            // you can merge the below code 
+         e.g. -> user.setName("Gaurav") , user.setAge(25) 
+         
+         5. Extract the code that requires more interpretation than surrounding code.
+         e.g. -> 
+         
+         //before
+         if(!email.includes(@)){...} 
+         saveUser(email)
+         
+         //after extraction
+         if(isEmailVaid(email)){...} 
+         saveUser(email)
+         
+         
+         
 
    
             
