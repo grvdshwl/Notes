@@ -115,8 +115,7 @@ Generally one should avoid comment excepts few acceptions.
    
    #### Concept - Examples
    
-   `
-   function saveUser(email, password) {
+   ` function saveUser(email, password) {
   const user = {
     id: Math.random().toString(),
     email: email,
@@ -150,7 +149,8 @@ class User {
 
 const user = new User('test@test.com', 'testers');
 user.save();
-   `
+
+`
          
          
    
