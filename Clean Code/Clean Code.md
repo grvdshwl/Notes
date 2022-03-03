@@ -84,7 +84,19 @@ Generally one should avoid comment excepts few acceptions.
 
    
 
-
+ # Functions and Methods
+   
+   ### What Makes Up a Function?
+   
+  1.   Invocation -> calling a function should be readable -> The number and order of arguments matter
+  
+      ``` add(5,7)``` 
+  2.   Declaration -> Working with function should be easy/readable ---> The length of function body matters
+        ```  function add(n1,n2){
+               return n1+n2
+               }
+         
+        ```
          
    
    
