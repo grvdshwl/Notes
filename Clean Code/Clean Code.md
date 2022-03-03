@@ -274,8 +274,8 @@ Generally one should avoid comment excepts few acceptions.
                            customer.addId();
                            console.log(customer);
                            
-                           
-           5.  One arguments functions or methods  makes sense where you want to use same function at different places.               
+                          
+   5.  One arguments functions or methods  makes sense where you want to use same function at different places.               
                   
                       function log(message) {
                       
