@@ -273,9 +273,21 @@ Generally one should avoid comment excepts few acceptions.
                            const customer = new User('Max');
                            customer.addId();
                            console.log(customer);
+                           
+                           
+           5.  One arguments functions or methods  makes sense where you want to use same function at different places.               
+                  
+                      function log(message) {
+                      
+                      //Here the console log can changed to any other logging code and changes don't need to made individually.
+                          console.log(message);
+                        }
+
+                        log('Hi there!');
+
+
    
-   
-   
+            
          
          
          
