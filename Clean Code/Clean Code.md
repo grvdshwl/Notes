@@ -156,7 +156,11 @@ Generally one should avoid comment excepts few acceptions.
    
    
    
-   
+      ```
+var add2 = function(number) {
+  return number + 2;
+}
+```js
          
          
          
