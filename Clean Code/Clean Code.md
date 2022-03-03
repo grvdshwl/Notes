@@ -153,9 +153,64 @@ Generally one should avoid comment excepts few acceptions.
 
 
 
+   ### Tips
+   
+   1. If a function has two parameters and the order of function is understanable ,then its ok to use two parameters for function invocation.
+       
+      ```  
+     // Easier to understand 
+   function login(email, password) {
+     // Log a user in
+     // ...
+   }
+
+   login('max@test.com', 'testpassword');
 
 
-         
+
+   class Point {
+     constructor(x, y) {
+       this.x = x;
+       this.y = y;
+     }
+   }
+
+   const point = new Point(10, 13);
+   
+ // Does not makes sense.
+ 
+ function log(message, isError) {
+  if (isError) {
+    console.error(message);
+  } else {
+    console.log(message);
+  }
+}
+
+log('Hi there!', false);
+
+//After Refactoring
+
+function log(message) {
+  console.log(message);
+}
+
+function logError(errorMessage) {
+  console.error(errorMessage);
+}
+
+log('Hi there!');
+logError('An error!');
+
+
+```
+  
+   
+
+
+
+
+     
          
          
          
