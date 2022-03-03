@@ -97,7 +97,66 @@ Generally one should avoid comment excepts few acceptions.
                return n1+n2
                } 
         `
+       
+       
+    
+  ## Calling the function
+  
+   ### Minimize the number of parameteres while calling a function.
+   
+   #### Number of parameters
+   
+        1. None -> easy to call -> Best possible option.
+        2. 1 parameter -> easy to call -> very good possible option.
+        3. 2 parameters -> Accepatable to call -> use with caution.
+        4. 3 parameters -> Challenging to call -> Avoid if possible.
+        5. >3 parameters -> Difficult to call -> Always Avoid.
+   
+   
+   #### Concept - Examples
+   
+   `
+   function saveUser(email, password) {
+  const user = {
+    id: Math.random().toString(),
+    email: email,
+    password: password,
+  };
+
+  db.insert('users', user);
+}
+
+saveUser('test@test.com', 'testers');
+
+function saveUser(user) {
+  db.insert('users', user);
+}
+
+saveUser(newUser);
+
+
+
+class User {
+  constructor(email, password) {
+    this.email = email;
+    this.password = password;
+    this.id = Math.random().toString();
+  }
+
+  save() {
+    db.insert('users', this);
+  }
+}
+
+const user = new User('test@test.com', 'testers');
+user.save();
+   `
          
+         
+   
+   
+   
+   
    
    
          
