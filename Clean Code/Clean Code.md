@@ -247,7 +247,7 @@ Generally one should avoid comment excepts few acceptions.
                const total = sumUp(10, 19, -3, 22, 5, 100);
                
    4.   Try to avoid output arguments  - especially if they are unexpected i.e. try that function in not manupulating some value outside and if its necessary than 
-          do the naming which reflects the same.Sometime object oriented approach might be the possible solution as nothing is manipulated outside however in the
+          do the naming which reflects the same. Sometimes object oriented approach might be the possible solution as nothing is manipulated outside however in the
           same insatance.
          
                          function addId(user) {
