@@ -156,6 +156,8 @@ Generally one should avoid comment excepts few acceptions.
    ### Tips
    
    1. If a function has two parameters and the order of function is understanable ,then its ok to use two parameters for function invocation.
+      Sometime object oriented approach might be the possible solution.   
+
        
 
                        // Easier to understand 
@@ -206,9 +208,74 @@ Generally one should avoid comment excepts few acceptions.
    
 
 
+   2. If you are trying to pass more than two parameters , try to pass a single parameter containing all the data as object.
+   
+                        // Alright     
+                       class User {
+                          constructor(name, age, email) {
+                            this.name = name;
+                            this.age = age;
+                            this.email = email;
+                          }
+                        }
+
+                        const user = new User('Max', 31, 'max@test.com');
+                        
+                        
+                        //After Refactoring
+                        class User {
+                          constructor(userData) {
+                            this.name = userData.name;
+                            this.age = userData.age;
+                            this.email = userData.email;
+                          }
+                        }
+
+                        const user = new User({ name: 'Max', email: 'max@test.com', age: 31 });
+
+   
+   3. Functions with dynamic number of parameter can be destructed as an array.
+
+               function sumUp(...numbers) {
+                 let sum = 0;
+                 for (const number of numbers) {
+                   sum += number;
+                 }
+                 return sum;
+               }
+
+               const total = sumUp(10, 19, -3, 22, 5, 100);
+               
+   4.   Try to avoid output arguments  - especially if they are unexpected i.e. try that function in not manupulating some value outside and if its necessary than 
+          do the naming which reflects the same.Sometime object oriented approach might be the possible solution as nothing is manipulated outside however in the
+          same insatance.
+         
+                         function addId(user) {
+                             user.id = 'u1';
+                           }
+
+                           const user = { name: 'Max' };
+                           addId(user);
+
+                           console.log(user);
 
 
-     
+                           class User {
+                             constructor(name) {
+                               this.name = name;
+                             }
+
+                             addId() {
+                               this.id = 'u1';
+                             }
+                           }
+
+                           const customer = new User('Max');
+                           customer.addId();
+                           console.log(customer);
+   
+   
+   
          
          
          
