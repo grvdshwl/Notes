@@ -315,7 +315,6 @@ Generally one should avoid comment excepts few acceptions.
          8. Try keeping functions pure & avoid unexpected sideffects.
          9. Name of the function should impy or signal that a sideffect is likely to occur and if not extract that piece of code or change the name.
          10. can you easily test a function -> yes -> Your code is clean.
-         10. 
          
          
          
