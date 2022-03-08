@@ -166,5 +166,165 @@
     }
   
   
+  ## Single Responsibility Priniciple - classes should have a single responsibility
   
+        // NOT violating SRP
+      class User {
+        login(email: string, password: string) {}
+
+        signup(email: string, password: string) {}
+
+        assignRole(role: any) {}
+      }
+
+      // Violating SRP
+      class ReportDocument {
+        generateReport(data: any) {}
+
+        createPDF(report: any) {}
+      }
+      
+  ## Open-Closed Principle - a class should be open for extension however closed for modification.
+  
+      // class Printer {
+    //   printPDF(data: any) {
+    //     // ...
+    //   }
+
+    //   printWebDocument(data: any) {
+    //     // ...
+    //   }
+
+    //   printPage(data: any) {
+    //     // ...
+    //   }
+
+    //   verifyData(data: any) {
+    //     // ...
+    //   }
+    // }
+
+
+    interface Printer {
+      print(data: any);
+    }
+
+    class PrinterImplementation {
+      verifyData(data: any) {}
+    }
+
+    class WebPrinter extends PrinterImplementation implements Printer {
+      print(data: any) {
+        // print web document
+      }
+    }
+
+    class PDFPrinter extends PrinterImplementation implements Printer {
+      print(data: any) {
+        // print PDF document
+      }
+    }
+
+    class PagePrinter extends PrinterImplementation implements Printer {
+      print(data: any) {
+        // print real page
+      }
+    }
     
+## Liskov substition principle.
+
+Objects should be replaceble with the instances their sub classes without altering the behaviour.
+
+      class Bird {}
+
+      class FlyingBird extends Bird {
+        fly() {
+          console.log('Fyling...');
+        }
+      }
+
+      class Eagle extends FlyingBird {
+        dive() {
+          console.log('Diving...');
+        }
+      }
+
+      const eagle = new Eagle();
+      eagle.fly();
+      eagle.dive();
+
+      class Penguin extends Bird {
+        // Problem: Can't fly!
+      }
+
+## Interface segregation principle
+
+
+
+      interface Database {
+      storeData(data: any);
+    }
+
+    interface RemoteDatabase {
+      connect(uri: string);
+    }
+
+    class SQLDatabase implements Database, RemoteDatabase {
+      connect(uri: string) {
+        // connecting...
+      }
+
+      storeData(data: any) {
+        // Storing data...
+      }
+    }
+
+    class InMemoryDatabase implements Database {
+      storeData(data: any) {
+        // Storing data...
+      }
+    }
+    
+## Dependency Inversion principle
+  You should depend upon abstractions not concretions.
+
+    interface Database {
+      storeData(data: any);
+    }
+
+    interface RemoteDatabase {
+      connect(uri: string);
+    }
+
+    class SQLDatabase implements Database, RemoteDatabase {
+      connect(uri: string) {
+        console.log('Connecting to SQL database!');
+      }
+
+      storeData(data: any) {
+        console.log('Storing data...');
+      }
+    }
+
+    class InMemoryDatabase implements Database {
+      storeData(data: any) {
+        console.log('Storing data...');
+      }
+    }
+
+    class App {
+      private database: Database;
+
+      constructor(database: Database) {
+        this.database = database; 
+      }
+
+      saveSettings() {
+        this.database.storeData('Some data');
+      }
+    }
+
+
+    const sqlDatabase = new SQLDatabase();
+    sqlDatabase.connect('my-url');
+    const app = new App(sqlDatabase);
