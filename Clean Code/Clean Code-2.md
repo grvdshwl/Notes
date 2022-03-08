@@ -4,23 +4,23 @@
   
 
     
-                //without guards
-               if(user.active){
-               if(user.hasPurchases()){
+               
+    //without guards
+    if (user.active) {
+      if (user.hasPurchases()) {
+        //do stuff
+      }
+    }
 
-               //do stuff
-               }
-               }
+    //with Guards
 
-               //with Guards
+    if (!user.active) {
+      return //fail fast
+    }
 
-               if(!user.active){
-               return //fail fast
-               }
+    if (user.hasPurchases()) {
+      return // fail fast
+    }
 
-               if(user.hasPurchases()){
-               return // fail fast
-               }
-
-               //do stuff
+    //do stuff
    
