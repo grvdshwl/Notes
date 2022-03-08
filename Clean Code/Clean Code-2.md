@@ -24,3 +24,35 @@
 
     //do stuff
    
+
+  ## Extracting Control structures and positive pharsing
+  
+
+       // before
+
+      if(!email.includes("@")){
+        return
+      }
+
+
+      //Spliiting but negative phrasing
+
+      function isEmailNotValid(email){
+        return !email.inculdes("@")
+      }
+
+      if(isEmailNotValid(email)){
+        return
+      }
+
+
+
+      //Spliiting and positive phrasing
+
+      function isEmailValid(email){
+        return email.inculdes("@")
+      }
+
+      if(!isEmailValid(email)){
+        return
+      }
