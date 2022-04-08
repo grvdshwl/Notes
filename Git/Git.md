@@ -29,7 +29,7 @@
    3. git clean -dn and git clean -df ->delete untracked files.
    4. git reset filename & git checkout --filename/.  or git restore --staged filename or . & git restore . --> remove files from staging area.
    5. git reset  Head~1 -> undo latest commit ( staging & commit)
-      git reset --soft Head~1 -> undo latest commit (commit)
-      git reset --hard Head~1 -> undo latest commit ( wd,staging & commit)
+   6. git reset --soft Head~1 -> undo latest commit (commit)
+   7. git reset --hard Head~1 -> undo latest commit ( wd,staging & commit)
       
   
