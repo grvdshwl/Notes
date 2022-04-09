@@ -29,7 +29,7 @@
    git reset --hard Head~1      ----> git reflog      ----> git reset --hard commit-hash
    To delete the latest commit   to log all the hashes   to bring back deleted commit
    
-   ###Branch
+   ### Branch
    
    git branch -D branch-name --> git reflog --> git checkout branch-hash   --> git switch -c branch-name --> git switch master
    to delete the branch.   to log hashes.   to checkout the commit in detached head.     create branch again     switch to master
