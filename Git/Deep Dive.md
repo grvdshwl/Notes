@@ -34,4 +34,15 @@
    git branch -D branch-name --> git reflog --> git checkout branch-hash   --> git switch -c branch-name --> git switch master
    to delete the branch.   to log hashes.   to checkout the commit in detached head.     create branch again     switch to master
   
+  ## Fast Forward Merge
+  
+  Fast forward merge can be performed when there is a direct linear path from the source branch to the target branch. In fast-forward     merge, git simply moves the source branch pointer to the target branch pointer without creating an extra merge commit.
+  
+  [Fast Forward Brief](https://www.tutorialspoint.com/what-is-a-fast-forward-merge-in-git#:~:text=Fast%20forward%20merge%20can%20be,creating%20an%20extra%20merge%20commit.)
+  
+  
+  
+  
+  
+  
   
