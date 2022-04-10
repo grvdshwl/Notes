@@ -41,6 +41,14 @@
   [Fast Forward Brief](https://www.tutorialspoint.com/what-is-a-fast-forward-merge-in-git#:~:text=Fast%20forward%20merge%20can%20be,creating%20an%20extra%20merge%20commit.)
   
   
+  git merge feature.
+  
+  
+  squash merge will squash all the commits of feature branch and add it to staging area of master post which we can coomit those changes
+  into a single commit.
+  
+  git merge --squash feature.
+  
   
   
   
