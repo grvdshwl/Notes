@@ -50,7 +50,13 @@
   git merge --squash feature.
   
   
+  ## Recursive Merge
   
+  In Recursive merge, after you branch and make some commits, there are some new original commits on the ‘master‘. So, when it’s time to merge, git recurses over the branch and creates a new merge commit. The merge commit continues to have two parents.
+  
+  [Recursive Merge Brief](https://www.geeksforgeeks.org/merge-strategies-in-git/#:~:text=Recursive%20Merge%3A,continues%20to%20have%20two%20parents.)
+  
+  git merge --no-ff feature
   
   
   
