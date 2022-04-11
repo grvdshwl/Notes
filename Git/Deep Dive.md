@@ -82,7 +82,15 @@ Merge conflict occurs when we merge two branches and both have commits which hav
 git merge -- abort ---> to abort merge
 git diff --> to display different changes in files in different commits.
 
+## Cherry Picking
 
+Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+
+This is in contrast with other ways such as merge and rebase which normally apply many commits onto another branch.
+
+Example- Impotant typo expmale in master was fixed by cherrypicking.
+
+git cherry-pick commit-id
 
   
   
