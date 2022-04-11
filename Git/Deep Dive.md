@@ -59,4 +59,23 @@
   git merge --no-ff feature
   
   
+  ## Rebase 
+  
+  Rebase is the process in which if the new commits are required for our feature to move forward then we can change the previous base to the newest commit of master branch and then fast forward the merge.
+  
+  
+  In Git, the term rebase is referred to as the process of moving or combining a sequence of commits to a new base commit. Rebasing is very beneficial and it visualized the process in the environment of a feature branching workflow.
+
+
+git rebase master (in feature branch)
+
+when to use :
+1. Fetaure relies on additional commits in master branch
+2. Feature is finished and implementation into master without merge commit
+3. Remember - Rebase rewrites code history so do not use in public repos.
+
+
+
+  
+  
   
