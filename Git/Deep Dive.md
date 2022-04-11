@@ -75,6 +75,14 @@ when to use :
 3. Remember - Rebase rewrites code history so do not use in public repos.
 
 
+## Merge Conflict
+
+Merge conflict occurs when we merge two branches and both have commits which have changes in same file.
+
+git merge -- abort ---> to abort merge
+git diff --> to display different changes in files in different commits.
+
+
 
   
   
