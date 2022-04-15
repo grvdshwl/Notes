@@ -79,7 +79,9 @@ Step 2 : Push the changes to remote from below command and create a remote track
            
   Step 3 : Create a local tracking branch and merge the changes received.
   
-            git branch --track branch-name(feature-remote) remote-tracking-branch-name(remotes/origin/feature-remote)
+            git branch --track local-tracking-branch-name(feature-remote) remote-tracking-branch-name(remotes/origin/feature-remote)
+            
+   **It is highly Recommended to name local-tracking-branch same as remote-tracking-brnach) 
            
  Step 4: Pull all the changes
                
