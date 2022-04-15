@@ -53,4 +53,13 @@
     
   <img width="1415" alt="Screenshot 2022-04-15 at 9 46 15 AM" src="https://user-images.githubusercontent.com/79152383/163517861-5991abce-bcc9-4d7f-8baf-0ae4a035c548.png">
 
+## Local Tracking Branch
+
+Local Tracking Branch is local reference to the remote tracking branch and is to be edited, we can pull changes and push changes to remote from this branch directly as it has the reference to it remote branch.
+
+<img width="1440" alt="Screenshot 2022-04-15 at 10 00 25 AM" src="https://user-images.githubusercontent.com/79152383/163518855-a01b3169-09b8-45e3-8e5b-60dd7092d94e.png">
+
+
+
+
 
