@@ -42,4 +42,13 @@
      git remote ---> to display all remote servers connected.(ex => origin )
      
      
+## Remote Tracking Branch
+
+    It is the local readonly copy of the remote branch (on github).
+    
+    It establish a connection b/w local branch and remote branch, since there is no direct connection.
+    
+    
+    <img width="1415" alt="Screenshot 2022-04-15 at 9 46 15 AM" src="https://user-images.githubusercontent.com/79152383/163517861-5991abce-bcc9-4d7f-8baf-0ae4a035c548.png">
+
 
