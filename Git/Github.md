@@ -43,6 +43,14 @@
      
      git fetch origin. ----> to fetch all the remote tracking branches from remote(github) if that branch is not in local repo
      
+     git clone URL -----> to clone a remote repository.
+     
+     git branch -D branch-name -----> To delete a branch.
+     
+     git branch --delete --remotes remote-tracking-branch-name(remotes/origin/feature) ----> to delete a remote tracking branch.
+     
+     git push origin --delete remote-branch-name (fetaure-remote) ------> to delete a remote branch (on github)
+     
      
 ## Remote Tracking Branch
 
