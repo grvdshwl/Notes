@@ -41,6 +41,8 @@
      
      git remote ---> to display all remote servers connected.(ex => origin )
      
+     git fetch origin. ----> to fetch all the remote tracking branches from remote(github) if that branch is not in local repo
+     
      
 ## Remote Tracking Branch
 
