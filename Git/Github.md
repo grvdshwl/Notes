@@ -61,5 +61,27 @@ Local Tracking Branch is local reference to the remote tracking branch and is to
 
 
 
+### Push Changes from Local Branch to Remote branch
 
+Step 1: Commit the changes in local branch.
+
+Step 2 : Push the changes to remote from below command and create a remote tracking branch
+          
+           git push origin branch-name
+ 
+ ### Push changes from Remote Branch to Local Tracking Branch.
+ 
+ Step 1 : Create a Remote Branch in the Remote Repo.
+ 
+ Step 2 : Fetch all the remote tracking branches.
+           
+           git fetch origin
+           
+  Step 3 : Create a local tracking branch and merge the changes received.
+  
+            git branch --track branch-name(feature-remote) remote-tracking-branch-name(remotes/origin/feature-remote)
+           
+ Step 4: Pull all the changes
+               
+               git pull
 
