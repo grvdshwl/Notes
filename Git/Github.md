@@ -85,3 +85,7 @@ Step 2 : Push the changes to remote from below command and create a remote track
                
                git pull
 
+
+## To convert local branch into local tracking branch directly and push changes to remote use below command
+
+         git push -u origin branch-name (u stand for setting upstream)
