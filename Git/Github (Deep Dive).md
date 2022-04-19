@@ -3,10 +3,10 @@
 
 ## Why do we use github ?
 
- > Cloud Storage
- > Portfolio Page
- > Collboration
- > Contribution
+ * > Cloud Storage
+ * > Portfolio Page
+ * > Collboration
+ * > Contribution
 
 ---
 
