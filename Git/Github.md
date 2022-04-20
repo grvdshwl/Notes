@@ -53,6 +53,10 @@
      
      git branch -m Previous-Branch-Name New-Branch-Name -------> Rename a branch
      
+     git push -f origin master ----> to force a push to remote branch
+     
+     git clone URL . ------> to clone the remote repository in same folder and not create a new folder.
+     
      
 ## Remote Tracking Branch
 
