@@ -51,6 +51,8 @@
      
      git push origin --delete remote-branch-name (fetaure-remote) ------> to delete a remote branch (on github)
      
+     git branch -m Previous-Branch-Name New-Branch-Name -------> Rename a branch
+     
      
 ## Remote Tracking Branch
 
