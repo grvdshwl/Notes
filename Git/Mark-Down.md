@@ -136,5 +136,5 @@ function add(num1, num2) {
 <!-- Task List -->
 
 - [x] Task 1
-- [] Task 2
+- [ ] Task 2
 - [x] Task 3
