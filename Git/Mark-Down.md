@@ -72,7 +72,7 @@ _This text is italics_. ------> \_This text is italics\_
 
 [Google](www.google.com "Google Website")
 
-[Facebook](www.facebook.com)
+[Facebook](https://www.facebook.com/)
 
 <!-- UL -->
 
