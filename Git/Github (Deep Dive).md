@@ -14,7 +14,7 @@
 
 Benfits of Organisation account over individual account :-
 
-- **Public Repositories** : They're visible to any user on your GitHub Enterprise instance. **Private Repositories** : They're only available to the repository owner. You can add collaborators of your choise to share with.
+- **Public Repositories** : They're visible to any user on your GitHub Enterprise instance. **Private Repositories** : They're only available to the repository owner. You can add collaborators of your choice to share with.
 
 - In Individual account we cannot control access level of **outside collaborator** is always provide write access anmd some other higher level access however we can control the access level in organisational account.
 
