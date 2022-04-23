@@ -5,7 +5,7 @@ A vast majority of time of developers is spent for reading and understanding cod
 Clean code is the code which is easy to read,understand & should be concise.
 
 ## Naming
-   A good name should be meaning , as so , that reader should understanding what variable is storing or what function is tring to to do without even looking at the code.
+   A good name should be meaning, as so , that reader should understand what variable is storing or what function is tring to to do without even looking at the code.
    
    ### Rules
         1. Variables/Constants/Data Containers -> Noun or short adjective
@@ -56,7 +56,7 @@ Clean code is the code which is easy to read,understand & should be concise.
    
 ## Comments & Code Formatting
 
-Generally one should avoid comment excepts few acceptions.
+Generally one should avoid comment excepts few exceptions.
 
    ### Bad Comments
    1. Redundant Comments 
@@ -155,7 +155,7 @@ Generally one should avoid comment excepts few acceptions.
 
    ### Tips
    
-   1. If a function has two parameters and the order of function is understanable ,then its ok to use two parameters for function invocation.
+   1. If a function has two parameters and the order of function is understandable ,then its ok to use two parameters for function invocation.
       Sometime object oriented approach might be the possible solution.   
 
        
@@ -246,9 +246,7 @@ Generally one should avoid comment excepts few acceptions.
 
                const total = sumUp(10, 19, -3, 22, 5, 100);
                
-   4.   Try to avoid output arguments  - especially if they are unexpected i.e. try that function in not manupulating some value outside and if its necessary than 
-          do the naming which reflects the same. Sometimes object oriented approach might be the possible solution as nothing is manipulated outside however in the
-          same insatance.
+   4.   Try to avoid output arguments  - especially if they are unexpected i.e. try that function in not manupulating some value outside and if its necessary than do the naming which reflects the same. Sometimes object oriented approach might be the possible solution as nothing is manipulated outside however in the same insatance.
          
                          function addId(user) {
                              user.id = 'u1';
