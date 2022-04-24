@@ -233,7 +233,7 @@
     
 ## Liskov substition principle.
 
-Objects should be replaceble with the instances their sub classes without altering the behaviour.
+Objects should be replaceble with the instances of their sub classes without altering the behaviour.
 
       class Bird {}
 
