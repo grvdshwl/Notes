@@ -37,3 +37,5 @@ html{
 }
 
 ```
+
+6. Whenever box-shadow is increased on hovering a component, the opacity should decrease a little as acc. to law of physics whenever a item is moved upwards the shadow becomes both larger and lighter.
