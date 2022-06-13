@@ -1,5 +1,9 @@
 # Database Design
 
+[Database](https://www.mikedane.com/databases/sql/)
+
+[Roadmap](https://whimsical.com/dbms-roadmap-by-love-babbar-FmUi8ffVop33t3MmpVxPCo)
+
 > Data : Data is a collection of a Information that can be gathered by research,observation,collection or measurement. This information may be in the form of text ,documents, images, audio clips, software programs.
 
 > Database : A database is an organized collection of data, typically stored electronically in a computer system.
@@ -13,6 +17,8 @@ Ex -> MySQL, PostgresSQL ,Oracle etc
 > SQL Stands for Structured query language which is standard language for storing,manupulating and retreiving data in realtional database.
 
 > SQL is a combination of two languages data defination language which is used to define data (CREATE TABLE , ALTER TABLE) and data manipulation language which is used to manipulate data (INSERT,DELETE,UPDATE,RETREIVE)
+
+![Screenshot 2022-06-10 at 10 49 25 AM](https://user-images.githubusercontent.com/79152383/172995652-735d679a-b70d-44c3-b7e7-d9f47bda7164.png)
 
 ## Database Design
 
@@ -88,3 +94,5 @@ Three types:
 2. One to many
 
 3. Many to many
+
+<img width="1183" alt="Screenshot 2022-06-10 at 10 53 51 AM" src="https://user-images.githubusercontent.com/79152383/172996054-01e83b61-0cb9-4985-8049-b6db911b7c37.png">
